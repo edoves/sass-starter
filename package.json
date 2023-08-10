@@ -1,0 +1,22 @@
+{
+  "name": "sass-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel devserver watch:scss",
+    "devserver": "live-server",
+    "watch:scss": "sass scss/style.scss:css/style.css --watch",
+    "build": "postcss css/style.css --use autoprefixer -d css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
+  }
+}

@@ -1,0 +1,16 @@
+@use '../abstract/' as var;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 10px/16px = 0.625px  or 62.5%*/
+}
+
+body {
+  font-family: var.$site-font;
+  box-sizing: border-box;
+  margin: 0;
+}
